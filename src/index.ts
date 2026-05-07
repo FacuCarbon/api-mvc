@@ -1,0 +1,8 @@
+import app from "./app.js";
+
+const PORT = Number(process.env.PORT) || 3000;
+
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`🚀 Servidor listo en http://localhost:${PORT}`);
+  console.log(`📦 Endpoints: GET/POST http://localhost:${PORT}/api/products`);
+});
